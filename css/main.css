@@ -1,0 +1,56 @@
+*{
+	box-sizing: border-box;
+}
+
+.text_red {
+	color: red;
+}
+
+/* Header */
+
+.header__text-1 {
+	max-width: 100px;
+
+	background-color: blue;
+
+	color: #fff;
+}
+
+.header__text-2 {
+	margin-top: 100px;
+}
+
+/* Section 1 */
+
+.section__title-h2 {
+	padding: 5px 5px;
+
+	background-color: green;
+
+	color: #fff;
+}
+
+/* Section 2 */
+
+.section__title-h2_big {
+	padding: 40px 35px;
+}
+
+.section__item {
+	max-width: 35%;
+}
+
+.item__title {
+	text-align: center;
+}
+
+.section__list li{
+	border: 1px solid #000;
+	border-bottom: 0;
+
+	font-size: 30px;
+}
+
+.section__list li:last-child {
+	border-bottom: 1px solid #000;
+}
