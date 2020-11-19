@@ -4,66 +4,88 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CSS</title>
+	<title>Site</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
-
+	
 	<header class="header">
+		<div class="container">
+			
+			<img class="logo" src="img/logo.png">
 
-		<img class="header__logo" src="img/logo.jpg">
-		<h1 class="header__title text_red">Вступление H1</h1>
-		<p class="header__text-1">Это текст моего первого домашнего задания</p>
-		<p class="header__text-2">Не верится, но мне уже удается писать свой <span class="text_red">первый код на HTML</span></p>
+			<div class="header__content-wrap">
 
-	</header>	<!-- /.header -->	
+				<div class="header__content-text">
+					<h1 class="header__title">С помощью верстки я создам ту жизнь, о которой <span class="text_big">мечтаю!</span></h1>
+					<p class="header__text">Мои стремления + настойчивость позволят мне достичь чего угодно. Я не верю в это. Я знаю это на 100%. Меня не остановить!</p>
+					<a class="btn" href="#">Двигаться к мечте!</a>
+				</div>
 
-	<section class="section">
+				<img class="header__img" src="img/headerimg.png">
 
-			<h2 class="section__title-h2">Что дальше? H2</h2>
-			<p>Дальше, я буду получать все больше и больше опыта в разработке сайтов, чтобы достичь новых вершин! <a href="#">Прочитать больше в Google</a></p>
+			</div> <!-- /.content-wrap -->
 
-	</section>	<!-- /.section -->
+		</div> <!-- /.container -->
+	</header> <!-- /.header -->
 
-	<section class="section">
+	<section class="section section_section-ahead">
 
-			<h2 class="section__title-h2 section__title-h2_big">Что я буду уметь? H2</h2>
+		<div class="container">
+			
+			<h2 class="section__title">Что меня ждет впереди</h2>
 
-			<div class="section__item">
-				<p class="item__title">Я смогу создавать вот такие замечательные формы:</p>
+			<div class="section__row">
 
-				<form class="section__form" action="#">
-					<input type="text" name="name" placeholder="Имя" required="">
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="tel" name="phone" placeholder="Телефон" required="">
-					<button type="submit">Отправить форму</button>
-				</form>
+				<div class="row__item">
+					<img class="item__icon" src="img/section-ahead/1.png">
+					<h3 class="item__title">Свободное время</h3>
+					<p class="item__text">Мне нужно свободное время на семью и самое настоящее</p>
+				</div>
+
+				<div class="row__item">
+					<img class="item__icon" src="img/section-ahead/2.png">
+					<h3 class="item__title">Яркие путешествия</h3>
+					<p class="item__text">Работать откуда угодно - что может быть лучше?</p>
+				</div>
+
+				<div class="row__item">
+					<img class="item__icon" src="img/section-ahead/3.png">
+					<h3 class="item__title">Создание ценности</h3>
+					<p class="item__text">Нет ничего сильнее, чем жить не просто так, создавая ценность</p>
+				</div>
+
 			</div>
 
-			<p>А также, я научусь создавать списки</p>
-			<ul class="section__list">
-				<li>
-					С одним пунктом
-				</li>
+		</div> <!-- /.container -->
 
-				<li>
-					С несколькими пунктами
-				</li>
+	</section> <!-- /.section -->
 
-				<li>
-					И даже с тремя отдельными пунктами
-				</li>
-			</ul>
+	<section class="section section_section-form">
 
-	</section>	<!-- /.section -->
+		<div class="container">
+
+			<h2 class="section__title">Форма заказа билета в будущее</h2>
+
+			<form class="section-form__form" id="section-form__form" action="#">
+				<input class="form__input" id="#" type="text" name="" placeholder="Имя" required="">
+				<input class="form__input" id="#" type="email" name="" placeholder="E-mail" required="">
+				<input class="form__input" id="#" type="tel" name="" placeholder="Телефон" required="">
+				<input class="form__input" id="#" type="text" name="" placeholder="Куда я полечу в ближайшее время?" required="">
+				<button class="btn btn_form-btn" type="submit">Двигаться к мечте</button>
+			</form>
+		</div> <!-- /.container -->
+
+	</section> <!-- /.section -->
 
 	<footer class="footer">
+		<p class="right">© Все мои мечты защищены моим трудолюбием</p>
+	</footer>
 
-		<h2 class="section__title-h2">Отличное начало! H2</h2>
-		<a href="#">Перейти на страницу первого занятия курса</a>
-		
-	</footer>	<!-- /.footer -->
-		
 </body>
 </html>
